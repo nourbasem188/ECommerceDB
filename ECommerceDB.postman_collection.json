@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "0f7fde41-6224-45ce-9184-edcc4a90cb24",
+		"name": "ECommerceDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45484025"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Add Users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\" : \"Nour\",\r\n        \"Email\" : \"nourbasem333@gmail.com\",\r\n        \"Password\" : \"nourbasem188\"\r\n    },\r\n    {\r\n        \"name\" : \"yasmin\",\r\n        \"Email\" : \"yasmen@gmail.com\",\r\n        \"Password\" : \"yasmen33\"\r\n    },\r\n    {\r\n        \"name\" : \"yahia\",\r\n        \"Email\" : \"yahia@gmail.com\",\r\n        \"Password\" : \"yahia10\"\r\n    },\r\n    {\r\n        \"name\" : \"Ali\",\r\n        \"Email\" : \"Ali@gmail.com\",\r\n        \"Password\" : \"ali12\"\r\n    },\r\n    {\r\n        \"name\" : \"Mai\",\r\n        \"Email\" : \"mai@gmail.com\",\r\n        \"Password\" : \"mai89\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/Signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"Signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Add Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"Name\": \"Wireless Mouse\",\r\n    \"Description\": \"Ergonomic wireless mouse with USB receiver\",\r\n    \"Price\": 15.99,\r\n    \"Category\": \"Electronics\",\r\n    \"Stock\": 120\r\n  },\r\n  {\r\n    \"Name\": \"Mechanical Keyboard\",\r\n    \"Description\": \"Backlit mechanical keyboard with blue switches\",\r\n    \"Price\": 45.50,\r\n    \"Category\": \"Electronics\",\r\n    \"Stock\": 75\r\n  },\r\n  {\r\n    \"Name\": \"Coffee Mug\",\r\n    \"Description\": \"Ceramic coffee mug with heat-resistant handle\",\r\n    \"Price\": 7.99,\r\n    \"Category\": \"Kitchen\",\r\n    \"Stock\": 200\r\n  },\r\n  {\r\n    \"Name\": \"Yoga Mat\",\r\n    \"Description\": \"Non-slip yoga mat for home and gym workouts\",\r\n    \"Price\": 22.49,\r\n    \"Category\": \"Fitness\",\r\n    \"Stock\": 60\r\n  },\r\n  {\r\n    \"Name\": \"Bluetooth Speaker\",\r\n    \"Description\": \"Portable speaker with deep bass and long battery life\",\r\n    \"Price\": 35.00,\r\n    \"Category\": \"Electronics\",\r\n    \"Stock\": 90\r\n  },\r\n  {\r\n    \"Name\": \"Running Shoes\",\r\n    \"Description\": \"Lightweight running shoes with breathable fabric\",\r\n    \"Price\": 55.75,\r\n    \"Category\": \"Footwear\",\r\n    \"Stock\": 45\r\n  },\r\n  {\r\n    \"Name\": \"Backpack\",\r\n    \"Description\": \"Waterproof backpack with multiple compartments\",\r\n    \"Price\": 28.30,\r\n    \"Category\": \"Accessories\",\r\n    \"Stock\": 80\r\n  },\r\n  {\r\n    \"Name\": \"Wrist Watch\",\r\n    \"Description\": \"Analog wrist watch with leather strap\",\r\n    \"Price\": 60.00,\r\n    \"Category\": \"Fashion\",\r\n    \"Stock\": 50\r\n  },\r\n  {\r\n    \"Name\": \"Smartphone Stand\",\r\n    \"Description\": \"Adjustable desktop stand for smartphones and tablets\",\r\n    \"Price\": 12.49,\r\n    \"Category\": \"Electronics\",\r\n    \"Stock\": 150\r\n  },\r\n  {\r\n    \"Name\": \"Desk Lamp\",\r\n    \"Description\": \"LED desk lamp with adjustable brightness\",\r\n    \"Price\": 18.99,\r\n    \"Category\": \"Home\",\r\n    \"Stock\": 100\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/CreateProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"CreateProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/GetAllProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"GetAllProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products Above 30",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/ProductsAbove30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"ProductsAbove30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Electronic Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/ElecProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"ElecProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Up Dated User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/UpdatePrice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"UpdatePrice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/DeleteProduct/68cc67471bad4b095af273d9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"DeleteProduct",
+								"68cc67471bad4b095af273d9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Book Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"UserId\" : \"68cc65539fed4883f2480820\",\r\n        \"Products\":[\r\n        {\r\n            \"ProductId\" : \"68cc67471bad4b095af273d5\",\r\n            \"Quantity\" : 1\r\n\r\n        },\r\n        {\r\n            \"ProductId\" : \"68cc67471bad4b095af273d4\",\r\n            \"Quantity\" : 1\r\n        },\r\n        {\r\n            \"ProductId\" : \"68cc67471bad4b095af273d8\",\r\n            \"Quantity\" : 1\r\n        }],\r\n        \"TotalAmount\" : 96.49\r\n    },\r\n    {\r\n        \"UserId\" : \"68cc65539fed4883f2480821\",\r\n        \"Products\" : [\r\n        {\r\n            \"ProductId\" : \"68cc67471bad4b095af273d6\",\r\n            \"Quantity\" : 1\r\n        },\r\n        {\r\n            \"ProductId\" : \"68cc67471bad4b095af273da\",\r\n            \"Quantity\" : 1\r\n        }],\r\n        \"TotalAmount\" : 36.29\r\n    },\r\n    {\r\n        \"UserId\" : \"68cc65539fed4883f2480822\",\r\n        \"Products\" : [\r\n        {\r\n            \"ProductId\" : \"68cc67471bad4b095af273db\",\r\n            \"Quantity\" : 1\r\n        },{\r\n            \"ProductId\" : \"68cc67471bad4b095af273dc\",\r\n            \"Quantity\" : 1\r\n        }],\r\n        \"TotalAmount\" : 72.49\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders/CreateOrders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"CreateOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pending Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/PendingOrders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"PendingOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/UserProducts/68cc65539fed4883f2480820",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"UserProducts",
+								"68cc65539fed4883f2480820"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/UpdatedOrder/68cc76d1eaee10524e310083",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"UpdatedOrder",
+								"68cc76d1eaee10524e310083"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Stock",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/UpdatedStock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"UpdatedStock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Status",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/UpdateStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"UpdateStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Create Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"ProductId\": \"68cc67471bad4b095af273db\",\r\n    \"UserId\": \"68cc65539fed4883f2480821\",\r\n    \"Rating\": 5,\r\n    \"Comment\": \"Elegant design and very comfortable to wear daily!\"\r\n  },\r\n  {\r\n    \"ProductId\": \"68cc67471bad4b095af273db\",\r\n    \"UserId\": \"68cc65539fed4883f2480820\",\r\n    \"Rating\": 4,\r\n    \"Comment\": \"Nice watch, leather strap feels premium, but delivery was slow.\"\r\n  },\r\n  {\r\n    \"ProductId\": \"68cc67471bad4b095af273dc\",\r\n    \"UserId\": \"68cc65539fed4883f2480824\",\r\n    \"Rating\": 5,\r\n    \"Comment\": \"Very sturdy stand, works great with my tablet for video calls.\"\r\n  },\r\n  {\r\n    \"ProductId\": \"68cc67471bad4b095af273dc\",\r\n    \"UserId\": \"68cc65539fed4883f2480823\",\r\n    \"Rating\": 3,\r\n    \"Comment\": \"Good for phones, but not very stable with heavier tablets.\"\r\n  },\r\n  {\r\n    \"ProductId\": \"68cc67471bad4b095af273dd\",\r\n    \"UserId\": \"68cc65539fed4883f2480822\",\r\n    \"Rating\": 4,\r\n    \"Comment\": \"Bright light, easy to adjust angles, perfect for studying.\"\r\n  }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/CreateReview",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"CreateReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/reviews/ShowReviews/68cc67471bad4b095af273dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"ShowReviews",
+								"68cc67471bad4b095af273dc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
